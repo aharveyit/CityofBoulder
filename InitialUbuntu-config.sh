@@ -25,6 +25,9 @@ sudo systemctl enable NetworkManager.service
 echo " install nano"
 sudo apt install nano
 
+echo "install vm tools"
+sudo apt install open-vm-tools –y
+
 echo " create log file for sssd"  # notice this was not created and would erro out
 sudo mkdir -p /var/log/sssd
 
