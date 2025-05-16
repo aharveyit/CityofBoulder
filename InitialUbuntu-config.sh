@@ -67,7 +67,7 @@ sudo systemctl restart sssd
 echo "add group to the sudoers file"
 echo "%boulder.local\\SG-LinuxAdmin ALL=(ALL) ALL" | sudo tee /etc/sudoers.d/domainadmins # creates the file SG-Linuxadmin then adds the AD group
 echo "%SG-LinuxAdmin ALL=(ALL) ALL" | sudo tee /etc/sudoers.d/domainadmins # creates the file SG-Linuxadmin then adds the AD group
-sudo chmod 440 /etc/sudoers.d/SG-LinuxAdmin
+sudo chmod 440 /etc/sudoers.d/domainadmins
 echo "Sudoers file created for group it-sysadmin-linux"
 echo " restarting sssd"
  sudo systemctl restart sssd  # notice that a restart was needed
